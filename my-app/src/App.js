@@ -1,24 +1,32 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="app-wrapper">
+      <header className="header">
+        <img src="https://logomaster.ai/static/media/gallery002.936afb9d.png"></img>
       </header>
+      <nav className="navigation">
+        <ul>
+          <li><a>Profile</a></li>
+          <li><a>Some</a></li>
+        </ul>
+      </nav>
+      <content className="content">
+        <div className="banner">
+          <img src="https://cdn.domestika.org/c_limit,dpr_auto,f_auto,q_auto,w_820/v1540009799/content-items/002/566/434/MOPSPRSSfb-original.jpg?1540009799"></img>
+        </div>
+        <div className="posts">
+          <h3 className="postsHeader">My posts</h3>
+          <div className="post">
+            <div className="post-ava">
+              ava
+            </div>
+            <p className="post-text">Post text</p>
+          </div>
+        </div>
+      </content>
     </div>
   );
 }
